@@ -28,7 +28,7 @@ input:focus {
 
 @media (min-device-width: 700px) {
     #wikibox {
-        margin-left: 50px;
+        margin-left: 10px;
     }
 
     #wikiplot {

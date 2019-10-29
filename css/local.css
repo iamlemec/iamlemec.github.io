@@ -1,26 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/*
 :root {
     --main-bg-color: white;
     --main-fg-color: black;
     --main-md-color: #EEEEEE;
     --main-font-family: monospace;
-    --main-font-size: 16px;
-    --main-line-height: 20px;
-}
-*/
-
-:root {
-    --main-bg-color: #2C3037;
-    --main-fg-color: #B7B3BD;
-    --main-md-color: #444444;
-    /* --main-bg-color: #070908; */
-    /* --main-md-color: #333333; */
-    --main-font-family: monospace;
+    --main-font-size: 14px;
+    --main-line-height: 18px;
     /* --main-font-family: 'Roboto'; */
-    --main-font-size: 18px;
-    --main-line-height: 20px;
+    /* --main-font-size: 16px; */
+    /* --main-line-height: 22px; */
 }
 
 body {
@@ -59,16 +48,7 @@ a:visited {
 }
 
 .mec-name-text {
-    font-size: 30px;
-}
-
-.mec-jumbo-tron {
-    width: 100%;
-    overflow: hidden;
-}
-
-.mec-jumbo-tron > img {
-    width: 100%;
+    font-size: 20px;
 }
 
 .mec-title-box {
@@ -86,12 +66,10 @@ a:visited {
 
 .twitter {
     position: relative;
-    top: 3px;
-    left: -5px;
-    margin-top: 0px;
-    margin-right: -5px;
-    margin-bottom: -2px;
-    height: 25px;
+    top: 2px;
+    left: -2px;
+    margin-right: 2px;
+    height: 18px;
 }
 
 .github {
@@ -154,6 +132,10 @@ a:visited {
     border-bottom: 1px dashed var(--main-fg-color);
 }
 
+.img-responsive {
+    width: 85%;
+}
+
 /* courses */
 
 .course-title {
@@ -163,59 +145,6 @@ a:visited {
 .course > p {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-/* elltwo */
-
-#ellbox {
-    border: 1px solid black;
-    padding: 10px;
-    height: 50px;
-}
-
-#elltwo {
-    width: 95%;
-    float: left;
-}
-
-#input {
-    width: 100%;
-    font-family: monospace;
-    font-size: 18px;
-    line-height: 1.5;
-    border: 0;
-}
-
-#cell {
-    width: 100%;
-}
-
-#elltwo.render #input {
-    display: none;
-}
-
-#elltwo:not(.render) #cell {
-    display: none;
-}
-
-#render {
-    margin-left: 15px;
-}
-
-#cell > p {
-    margin: 0;
-}
-
-/* edgeworth */
-
-canvas.edgebox {
-    cursor: none;
-}
-
-/* jumbo sizing */
-:root {
-    --jumbo-top-cut: 25%;
-    --jumbo-bottom-cut: 23.9%;
 }
 
 /* mobile only rules */
@@ -238,15 +167,6 @@ canvas.edgebox {
         margin-top: 5px;
         margin-left: 10px;
         margin-right: 10px;
-    }
-
-    /* need a 1% differential */
-    .mec-jumbo-tron {
-      margin: calc(0% - var(--jumbo-top-cut)) 0% calc(3.8% - var(--jumbo-bottom-cut)) 0%;
-    }
-
-    .mec-jumbo-tron > img {
-      clip-path: inset(0% 0% var(--jumbo-bottom-cut) 0%);
     }
 
     .mec-bio-box {
@@ -281,31 +201,21 @@ canvas.edgebox {
     }
 
     .mec-main {
-        max-width: 900px;
+        max-width: 750px;
         margin-top: 40px;
         margin-bottom: 40px;
     }
 
-    /* need a 3.7% differential */
-    .mec-jumbo-tron {
-      margin: calc(0% - var(--jumbo-top-cut)) 0% calc(5.4% - var(--jumbo-bottom-cut)) 0%;
-    }
-
-    .mec-jumbo-tron > img {
-      clip-path: inset(0% 0% var(--jumbo-bottom-cut) 0%);
-    }
-
     .mec-bio-box {
         float: left;
-        width: 260px;
-        margin-right: 50px;
+        width: 180px;
         position: fixed;
         top: 59px;
     }
 
     .mec-content-box {
       float: right;
-      max-width: 600px;
+      max-width: 520px;
       margin-bottom: 50px;
     }
 
