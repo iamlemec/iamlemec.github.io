@@ -57,15 +57,15 @@ let [xmin, xmax] = [0, 10000]; let [ymin, ymax] = [55, 65];
 let [model, seqs, size, mteb, xoff, yoff] = zip(...data.map(d =>
   [d["Model"], d["Seqs"], d["Params"], d["MTEB"], d["xoff"], d["yoff"]]
 ));
-let scatter = Scatter(zip(seqs, mteb, size).map(([s, m, k]) =>
+let points = Points(zip(seqs, mteb, size).map(([s, m, k]) =>
   [Dot(), [s, m], [120*sqrt(k)/10, sqrt(k)]]
 ));
-let labels = Scatter(zip(model, seqs, mteb, xoff, yoff).map(([m, x, y, xo, yo]) =>
+let labels = Points(zip(model, seqs, mteb, xoff, yoff).map(([m, x, y, xo, yo]) =>
   [Anchor(Text(m), {align: 'right'}), [x+350+xo, y+0.03+yo]]
 ), {size: [160, 10]});
 let adaline = HLine(60.99, {stroke_dasharray: 4, lim: [xmin, xmax]});
 let adalab = Place(Text('text-embedding-ada-002'), {pos: [8400, 60.6], rad: [1500, 10]});
-let plot = Plot([scatter, labels], {
+let plot = Plot([points, labels], {
   aspect: phi, xlim: [xmin, xmax], ylim: [ymin, ymax], yticks: 5,
   xlabel: 'Sequences / Second', ylabel: 'MTEB Score', title: 'Speed vs Performance',
   xlabel_offset: 0.15, ylabel_offset: 0.12, title_offset: 0.05,
@@ -111,19 +111,19 @@ let [short, col, bits, mem, mteb, xoff, yoff] = zip(...data.map(d =>
   [d["Short"], d["Color"], d["Bits"], d["Memory"], d["MTEB"], d["xoff"], d["yoff"]]
 ));
 let mem3 = mem.map(b => log(b/3)/log(2));
-let scatter = Scatter(zip(mem3, mteb, col, bits).map(([m, t, c, b]) => {
+let points = Points(zip(mem3, mteb, col, bits).map(([m, t, c, b]) => {
   let stroke = interpolateHex(pal(c), '#000000', 0.5);
   let dot = Dot({fill: pal(c), stroke_width: 0.75, stroke: stroke, opacity: 0.75});
   let size = 0.03*pow(b, 0.3);
   return [dot, [m, t], size];
 }));
-let labels = Scatter(zip(short, mem3, mteb, col, bits, xoff, yoff).map(([n, x, y, c, b, xo, yo]) => {
+let labels = Points(zip(short, mem3, mteb, col, bits, xoff, yoff).map(([n, x, y, c, b, xo, yo]) => {
   let size = 0.15*pow(b, 0.03);
   let [x1, y1] = [x+size+0.01+xo, y+yo+0.1];
   let text = Text(`${n}-${b}`, {stroke: pal(c), stroke_width: 0.8});
   return [Anchor(text, {align: 'right'}), [x1, y1]]
 }), {size: 0.075});
-let plot = Plot([scatter, labels], {
+let plot = Plot([points, labels], {
   aspect: phi, xlim: [xmin, xmax], ylim: [ymin, ymax], xticks: 8, yticks: 6,
   xlabel: 'Bytes Per Record [log2(b/3)]', ylabel: 'MTEB Score [Retrieval]', title: 'Memory vs Performance',
   xlabel_offset: 0.15, ylabel_offset: 0.12, title_offset: 0.05,

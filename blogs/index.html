@@ -60,7 +60,7 @@ let markdown = await resp1.text();
 
 // parse spirit document
 let tree = parseDocument(markdown);
-let ctx = new Context();
+let ctx = new Context({macros});
 await tree.refs(ctx);
 let body = await tree.html(ctx);
 let name = await ctx.title.inner();
