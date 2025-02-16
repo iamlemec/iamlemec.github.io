@@ -6,7 +6,7 @@
 	url = https://github.com/iamlemec/elltwo
 [submodule "gum.js"]
 	path = prod/gum.js
-	url = https://github.com/iamlemec/gum.js
+	url = https://github.com/CompendiumLabs/gum.js
 [submodule "prod/spirit"]
 	path = prod/spirit
 	url = git@github.com:iamlemec/spirit
