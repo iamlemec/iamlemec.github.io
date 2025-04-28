@@ -49,9 +49,9 @@ rows = [
 [[blocks]]
 title = "Working Papers"
 rows = [
+	"Unleashing the Dragon: The Case for Patent Reform in China (with Lee Branstetter and Huiyan Zhang)",
 	"Science is Shaped by Wikipedia: Evidence from a Randomized Control Trial (with Neil Thompson)",
 	"From Patents to Products: Innovation, Product Creation, and Firm Growth (with David Argente, Salomé Baslandze, and Sara Moreira)",
-	"Unleashing the Dragon: The Case for Patent Reform in China (with Lee Branstetter and Huiyan Zhang)",
 	"Economics and Epidemics: Evidence from an Estimated Spatial Econ-SIR Model (with Mark Bognanni, Daniel Kolliner, and Kurt Mitman)",
 	"Innovation and Patent Policy with Interdependent Technology",
 ]
@@ -87,7 +87,7 @@ rows = [
 [[blocks]]
 title = "Conferences"
 rows = [
-	"2024: Banff Innovation, Productivity and Growth Conference (Upcoming, June)",
+	"2024: Banff Innovation, Productivity and Growth Conference",
 	"2023: NBER Productivity, Innovation, and Entrepreneurship Meeting (Cambridge), Junior Innovation Economics Conference (Harvard Business School)",
 	"2022: 9th ZEW/MaCCI Conference on the Economics of Innovation and Patenting (Frankfurt)",
 	"2021: Souther Economic Association Annual Meeting (virtual, Houston), Taiwan Symposium on Innovation Economics and Entrepreneurship (virtual, National Tsing Hua University)",
@@ -102,12 +102,16 @@ rows = [
 [[blocks]]
 title = "Students Supervized"
 rows = [
+	"David Agorastos (Ph.D. 2024): Research Financial Economist, Office of the Comptroller of the Currency",
 	"Ying-Kai Huang (Ph.D. 2021): Applied Research Scientist - Economist, Snap Inc",
 ]
 
 [[blocks]]
 title = "Thesis Committees"
 rows = [
+	"Hokyu Song (Ph.D. 2024): Associate Research Fellow at Korea Development Institute",
+	"Hyungjin Kim (Ph.D. 2024): Associate Research Fellow at Korea Development Institute",
+	"Steven Lann (Ph.D. 2024): Data Science Fellow, Allegheny County Department of Human Services",
 	"Lucy Wang (Ph.D. 2023, Katz): Postdoctoral Researcher, University of Cambridge",
 	"Domonkos Vamossy (Ph.D. 2020): Economist, Amazon Web Services",
 	"Tianyi Wang (Ph.D. 2020): Postdoctoral Research Associate, Princeton",
@@ -127,7 +131,7 @@ rows = [
 title = "Departmental Service"
 rows = [
 	"Hiring: Sustainability (Junior and Postdoc, 2015-16), International Trade (Junior, 2016-17), Development (Junior, 2016-17), International Macro (Junior, 2018-19), Econometrics (Junior, 2019-20)",
-	"Committees: Website Committee (2016-2020), Department Chair Selection Committee (2021), Diversity Committee (2021), Graduate Admissions Committee (2022, 2023), AI Committee (2023)",
+	"Committees: Website Committee (2016-2020), Department Chair Selection Committee (2021), Diversity Committee (2021), Graduate Admissions Committee (2022-2025), AI Committee (2023)",
 ]
 
 [[blocks]]
