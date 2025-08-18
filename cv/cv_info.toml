@@ -5,20 +5,19 @@ pdf_icon = "mini_print.svg"
 
 info_label = "Personal Information"
 address = [
-	"230 S. Bouquet St.",
-	"4507 W. W. Posvar Hall",
-	"Pittsburgh, PA 15260",
+	"Madison, WI",
+	"(330) 536-3277",
 ]
 contact = [
-	"<a href=\"mailto:doughanley@pitt.edu\">doughanley@pitt.edu</a>",
+	"<a href=\"mailto:doug@compendiumlabs.ai\">doug@compendiumlabs.ai</a>",
 	"<a href=\"http://doughanley.com/\">doughanley.com</a>",
-	"(330) 536-3277",
 ]
 
 [[blocks]]
 title = "Employment"
 rows = [
-	"Associate Professor, Department of Economics, University of Pittsburgh, 2023 —",
+	"Founding Engineer, Compendium Labs, 2024 —",
+	"Associate Professor, Department of Economics, University of Pittsburgh, 2023 — 2025",
 	"Assistant Professor, Department of Economics, University of Pittsburgh, 2014 — 2023",
 	"Visiting Scholar, Federal Reserve Bank of St. Louis, 2017 (short term)",
 ]
@@ -28,12 +27,6 @@ title = "Education"
 rows = [
 	"Ph.D., Economics, University of Pennsylvania, 2014",
 	"B.S., Economics, California Institute of Technology, 2006",
-]
-
-[[blocks]]
-title = "Research Interests"
-rows = [
-	"Macroeconomics, Knowledge Diffusion, Technological Change, Computational Methods, Climate Economics",
 ]
 
 [[blocks]]
@@ -67,7 +60,7 @@ rows = [
 ]
 
 [[blocks]]
-title = "Teaching"
+title = "Teaching Experience"
 rows = [
 	"Graduate: Computational Methods in Economics, Advanced Economic Growth, Advanced Macroeconomic Theory I/II",
 	"Undergraduate: Macroeconomics Proseminar, Economic Growth Elective, Intermediate Macroeconomics, Intermediate Microeconomics (Penn)",
@@ -126,13 +119,6 @@ rows = [
 title = "Refereeing Service"
 rows = [
 	"American Economic Review, Econometrica, Review of Economic Studies, Journal of Political Economy, Journal of Monetary Economics, European Economic Review, American Economic Journal: Macroeconomics, Journal of Public Economics, International Economic Review, Macroeconomic Dynamics, Review of Economic Dynamics, Journal of Comparative Economics, Journal of the European Economic Association, Journal of Mathematical Economics, Journal of Development Economics, Review of Economics and Statistics, Journal of Economic Theory, RAND Journal of Economics, The Economic Journal",
-]
-
-[[blocks]]
-title = "Departmental Service"
-rows = [
-	"Hiring: Sustainability (Junior and Postdoc, 2015-16), International Trade (Junior, 2016-17), Development (Junior, 2016-17), International Macro (Junior, 2018-19), Econometrics (Junior, 2019-20)",
-	"Committees: Website Committee (2016-2020), Department Chair Selection Committee (2021), Diversity Committee (2021), Graduate Admissions Committee (2022-2025), AI Committee (2023)",
 ]
 
 [[blocks]]
